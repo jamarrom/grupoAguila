@@ -1,0 +1,677 @@
+@charset "UTF-8";
+
+html, body
+{
+  	height: 100%;
+}
+
+body
+{
+	color: #ffffff;
+	font: 16px 'montserratregular';
+	line-height: 19px;
+	background-size: cover;
+	padding-top: 100px;
+	position: relative;
+}
+
+strong
+{
+  	font-family: 'Raleway-ExtraBold';
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	color: #00ed7f;
+	font: 28px 'myriad_proregular';
+	line-height: 32px;
+}
+
+a, a:before, a:after
+{
+	color: #ffffff;
+ 	text-decoration: none;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+a:hover, a:hover:before, a:hover:after
+{
+	cursor: pointer;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+span, span:before, span:after
+{
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+span:hover, span:hover:before, span:hover:after
+{	
+	cursor: pointer;
+ 	-webkit-transition: all 300ms ease-out;
+ 	-moz-transition: all 300ms ease-out;
+ 	-ms-transition: all 300ms ease-out;
+ 	-o-transition: all 300ms ease-out;
+ 	transition: all 300ms ease-out;
+}
+
+input, textarea
+{
+	width: 100%;
+	height: 62px;
+	color: #818181;
+	font: 14px 'montserratregular';
+	line-height: 16px;
+	border: 2px solid #c7c7c7;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 32px;
+	margin-bottom: 13px;
+}
+
+textarea
+{
+  height: 148px;
+	padding-top: 20px;
+	resize: none;
+}
+
+input[type="number"]
+{
+    width: 35px;
+    height: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    border: 2px solid #A6244A;
+}
+
+input[type="radio"], input[type=checkbox] 
+{
+	display: none;
+    width: auto;
+    height: auto;
+}
+
+input:focus, textarea:focus, .inputSeleccionado
+{
+	outline: 0;
+}
+
+input[type="checkbox"]
+{
+	width: auto;
+	height: auto;
+	margin: 0px;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+
+label {
+	color: #005383;
+	font-family: 'Raleway-Bold';
+	margin-bottom: 6px;
+}
+
+
+label.lbRadio
+{
+	font: 14px 'Raleway-Regular';
+    padding-left: 22px;
+	margin-right: 13px;
+    position: relative;
+}
+
+label.lbRadio:before
+{
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    left: 0;
+    top: 3px;
+    background-color: #ffffff;
+	box-shadow: inset 3px 0px 4px rgba(0, 0, 0, 0.29);
+    vertical-align: top;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+}
+
+label.lbCheckbox
+{
+	font-size: 16px;
+	padding-left: 13px;
+	margin-left: 10px;
+	position: relative;
+}
+
+label.lbCheckbox:before 
+{
+    content: "";
+	display: inline-block;
+	width: 11px;
+    height: 12px;
+	left: 0;
+	top: 4px;
+	background-color: #1d0042;
+	vertical-align: top;
+	position: absolute;
+}
+
+input[type=radio]:checked + label.lbRadio:before 
+{
+	content: "\2022";
+    color: #9fcc44;
+    font-size: 24px;
+    text-align: center;
+    line-height: 12px;
+}
+
+input[type=checkbox]:checked + label.lbCheckbox:before 
+{
+    content: "\2713";
+    font-size: 11px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 12px;
+}
+
+/******************************************************Placeholder******************************************************/
+
+::-webkit-input-placeholder
+{
+ 	color: #818181;
+}
+
+::-o-input-placeholder
+{
+ 	color: #818181;
+}
+
+::-ms-input-placeholder
+{
+ 	color: #ffffff;
+}
+
+:-moz-input-placeholder
+{
+ 	color: #818181;
+}
+
+::-moz-input-placeholder
+{
+ 	color: #818181;
+}
+
+
+
+textarea::-webkit-input-placeholder
+{
+ 	color: #527187;
+}
+
+textarea::-o-input-placeholder
+{
+ 	color: #527187;
+}
+
+textarea::-ms-input-placeholder
+{
+ 	color: #527187;
+}
+
+textarea:-moz-input-placeholder
+{
+ 	color: #527187;
+}
+
+textarea::-moz-input-placeholder
+{
+ 	color: #527187;
+}
+
+/************************************************************************************/
+
+.Header {
+}
+
+.Header-Center {
+
+}
+
+.Logo {
+	width: 241px;
+	height: 39px;
+	background: url(../images/logo.png) center no-repeat;
+	background-size: 100%;
+}
+
+.NavMenu {
+	font: 14px 'Raleway-Bold';
+	line-height: 14px;
+	top: -30px;
+	right: 0px;
+}
+
+.NavMenu ul li {
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.NavMenu ul li:hover {
+	color: #162b73;
+}
+
+
+
+.MainMenu-IcoMenu
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: #024673 url("../images/menu.png") no-repeat;
+    margin-top: -4px;
+    margin-right: 0px;
+    background-size: 100%;
+}
+
+.MainMenu-IcoMenu:hover
+{
+	background-color: #779737;
+}
+
+.MainMenu-List {
+	display: inline-block;
+	padding-top: 13px;
+	vertical-align: top;
+}
+
+.MainMenu-Item {
+	color: #005383;
+	font: 16px 'Raleway-Medium';
+	border-bottom: 3px solid #ffffff;
+	margin-right: 40px;
+	padding-bottom: 4px;
+}
+
+.MainMenu-Item:hover, .MainMenu-Item.activo {
+	text-shadow: 1px 0px 0px #005383;
+	border-color: #9aca3a;
+}
+
+/************************************************************************************/
+
+.TenemosExperiencia {
+  height: 931px;
+  background: url(../images/fondos/bgTenemosExperiencia.jpg) center no-repeat;
+}
+
+.TenemosExperiencia-Center {
+  width: 1148px;
+  padding-top: 120px;
+	position: relative;
+}
+
+.TenemosExperiencia-Img {
+	width: 735px;
+	height: 690px;
+	background: url(../images/acercaNosotros.png) center no-repeat;
+	left: -173px;
+}
+
+.TenemosExperiencia-Col {
+	width: 545px;
+	font-size: 14px;
+	line-height: 22px;
+	padding-top: 101px;
+}
+
+.TenemosExperiencia-Subtitle {
+	font-size: 15px;
+	line-height: 15px;
+	margin-bottom: 19px;
+}
+
+.TenemosExperiencia-Title {
+	max-width: 410px;
+	color: #fff;
+	font: 42px 'montserratmedium_italic';
+	line-height: 42px;
+	margin-bottom: 60px;
+}
+
+
+.TenemosExperiencia-Col p {
+	margin-bottom: 27px;
+}
+
+.TenemosExperiencia-Btn {
+	width: 186px;
+	color: #2c333a;
+	font: 14px 'montserratsemibold';
+	line-height: 14px;
+	background: #00ed7f;
+	padding: 22px 0px;
+	margin-top: 25px;
+	border: 1px solid #00ed7f;
+}
+
+.TenemosExperiencia-Btn.Escribenos {
+	background: none;
+	color: #fff;
+	border-color: #9c9c9c;
+	margin-left: 17px;
+}
+
+.TenemosExperiencia-Btn:hover {
+	background: #02ff90;
+	cursor: pointer;
+}
+
+/************************************************************************************/
+
+.NuestrosServicios {
+	height: 671px;
+	background: url(../images/fondos/bgNuestrosServicios.jpg) center no-repeat;
+}
+
+.NuestrosServicios-Center {
+	font-size: 15px;
+	padding-top: 118px;
+}
+
+.NuestrosClientes-ItemServicio {
+	width: 304px;
+	height: 300px;
+	font-size: 14px;
+	line-height: 14px;
+	background-color: rgba(41,45,49,0.84);
+	margin-right: 12px;
+	padding: 0px 27px;
+	padding-top: 38px;
+}
+
+.NuestrosClientes-ItemServicio figure {
+	margin-bottom: 20px;
+}
+
+.NuestrosClientes-ItemServicio figure.Ajuste {
+	margin-bottom: 27px;
+}
+
+.NuestrosClientes-TitleItemServicio {
+	color: #00ed7f;
+	font: 21px 'montserratmedium_italic';
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+.NuestrosClientes-TitleItemServicio.Monitoreo {
+  margin-bottom: 12px;
+}
+
+/************************************************************************************/
+
+.PreservamosIntegridad {
+	height: 247px;
+	background: url(../images/fondos/bgPreservamosIntegridad.jpg) center no-repeat;
+}
+
+.PreservamosIntegridad-Center {
+	width: 636px;
+  font: 21px 'montserratmedium_italic';
+  color: #262c33;
+  line-height: 21px;
+  padding-top: 53px;
+  padding-left: 98px;
+}
+
+.PreservamosIntegridad-Title {
+	font: 42px 'montserratmedium_italic';
+	line-height: 42px;
+}
+
+.PreservamosIntegridad-Title.Derecha {
+	margin-bottom: 5px;
+}
+
+.PreservamosIntegridad-Center span {
+ font-size: 49px;
+ line-height: 49px;
+}
+
+/************************************************************************************/
+
+.UneteNuestroEquipo {
+	height: 753px;
+	background: url(../images/fondos/bgUneteNuestroEquipo.jpg) center no-repeat;
+}
+
+.UneteNuestroEquipo-Center{
+	width: 1290px;
+	padding-top: 70px;
+	position: relative;
+}
+
+.UneteNuestroEquipo-Col1 {
+	width: 601px;
+}
+
+.UneteNuestroEquipo-Title {
+	color: #ffffff;
+	font: 56px 'montserratmedium_italic';
+	line-height: 56px;
+	margin-bottom: 40px;
+}
+
+.UneteNuestroEquipo-Col1 p {
+	max-width: 550px;
+	margin-bottom: 27px;
+}
+
+.UneteNuestroEquipo-Btn {
+	width: 304px;
+	color: #2c333a;
+	font: 14px 'montserratsemibold';
+	line-height: 14px;
+	background: #00ed7f;
+	padding: 23px 0px;
+	margin-top: 25px;
+}
+
+.UneteNuestroEquipo-Img {
+	width: 457px;
+	height: 829px;
+	background: url(../images/imgPolicia.png) center no-repeat;
+	right: 0px;
+	top: -76px;
+}
+
+/************************************************************************************/
+
+.NuestrosClientes {
+	height: 1390px;
+}
+
+.NuestrosClientes-Center {
+	width: 1274px;
+	font-size: 15px;
+	color: #2a2d31;
+	padding-top: 80px;
+}
+
+.NuestrosClientes-Title {
+	color: #2a2d31;
+	font: 45px 'montserratmedium_italic';
+	line-height: 45px;
+	margin-top: 20px;
+	margin-bottom: 34px;
+}
+
+.NuestrosClientes-Title.TNuestrosServicios {
+	color: #fff;
+	margin-bottom: 58px;
+}
+
+.NuestrosClientes-Logos {
+	margin-bottom: 178px;
+}
+
+.NuestrosClientes-Logos img {
+	margin-right: 62px;
+	vertical-align: middle;
+}
+
+.NuestrosClientes-Col1 {
+	width: 600px;
+	color: #30343f;
+}
+
+.NuestrosClientes-TitleContacto {
+	max-width: 355px;
+	font: 45px 'montserratmedium_italic';
+	line-height: 45px;
+	margin-top: 20px;
+	margin-bottom: 42px;
+}
+
+.NuestrosClientes-BtnEnviar {
+	width: 100%;
+	color: #30343f;
+	font: 14px 'montserratsemibold';
+	line-height: 14px;
+	background: #00ed7f;
+	padding: 23px 0px;
+}
+
+.NuestrosClientes-BtnEnviar:hover {
+	background: #02ff90;
+	cursor: pointer;
+}
+
+.NuestrosClientes-Col2 {
+	width: 605px;
+	color: #121f38;
+	font: 48px 'myriad_proregular';
+	line-height: 48px;
+	margin-left: 60px;
+}
+
+
+.NuestrosClientes-Col2 iframe {
+	border: 1px solid #00ed7f !important;
+	margin-bottom: 40px;
+}
+
+.NuestrosClientes-Col2 p {
+	padding-left: 80px;
+}
+
+/************************************************************************************/
+
+.TuSeguridadEsNuestraPrioridad {
+	width: 1270px;
+	height: 272px;
+	font: 46px 'montserratmedium_italic';
+	line-height: 46px;
+	background: url(../images/fondos/bgTuSeguridadEsPrioridad.jpg) center no-repeat;
+	margin: 0px auto;
+	top: -138px;
+	left: 0px;
+	right: 0px;
+}
+
+.TuSeguridadEsNuestraPrioridad p {
+	width: 326px;
+	margin-top: 54px;
+	margin-right: 110px;
+}
+
+.TuSeguridadEsNuestraPrioridad span {
+	color: #00ec85;
+}
+
+/************************************************************************************/
+
+.Footer {
+    height: 690px;
+		font-family: 'myriad_proregular';
+    background: #131313;
+		position: relative;
+}
+
+.Footer-Center {
+	width: 1240px;
+	padding-top: 211px;
+}
+
+.Footer-Col1 {
+	width: 388px;
+	margin-right: 136px;
+}
+
+.Footer-Logo {
+	width: 213px;
+	height: 88px;
+	background: url(../images/logoFooter.png) center no-repeat;
+	background-size: 100%;
+	margin-bottom: 27px;
+	margin-left: 9px;
+}
+
+.Footer-Col1 p {
+	margin-bottom: 20px;
+}
+
+.Footer-Col2 {
+	width: 111px;
+	margin-right: 345px;
+}
+
+.Footer-Title {
+	margin-bottom: 35px;
+	background: url(../images/borderTitleFooter.png) bottom left no-repeat;
+	padding-bottom: 22px;
+}
+
+.Footer a:hover {
+	color: #00ed7f;
+}
+
+.Footer-Col3 {
+	width: 250px;
+}
+
+.Footer-ListContacto li {
+	min-height: 40px;
+	background: url(../images/icoDireccion.png) top left no-repeat;
+	margin-bottom: 16px;
+	padding-left: 52px;
+}
+
+.Footer-ItemDireccion {
+}
+
+.Footer-ListContacto li.Footer-ItemTelefono {
+	background-image: url(../images/icoTelefono.png);
+}
+
+.Footer-ListContacto li .Footer-ItemEmail {
+	background-image: url(../images/icoEmail.png);
+}
