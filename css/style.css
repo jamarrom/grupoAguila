@@ -11,7 +11,6 @@ body
 	font: 16px 'montserratregular';
 	line-height: 19px;
 	background-size: cover;
-	padding-top: 100px;
 	position: relative;
 }
 
@@ -249,36 +248,59 @@ textarea::-moz-input-placeholder
 /************************************************************************************/
 
 .Header {
+	background: #e4e4e4;
+	padding-bottom: 6px;
 }
 
 .Header-Center {
-
+	width: 1277px;
+	padding-top: 7px;
 }
 
 .Logo {
-	width: 241px;
-	height: 39px;
+	width: 213px;
+	height: 88px;
 	background: url(../images/logo.png) center no-repeat;
 	background-size: 100%;
 }
 
-.NavMenu {
-	font: 14px 'Raleway-Bold';
+.Header-Top {
+	background: #30343f;
+	padding: 14px 0px;
+}
+
+.Header-CenterTop {
+	width: 1255px;
+	font: 14px 'myriad_proregular';
 	line-height: 14px;
-	top: -30px;
-	right: 0px;
+	padding-right: 22px;
 }
 
-.NavMenu ul li {
+.Header-ListTop li {
+	background: url(../images/icoDireccionTop.png) center left no-repeat;
+	padding: 3px 0px;
+	padding-left: 23px;
 	margin-right: 15px;
-	cursor: pointer;
 }
 
-.NavMenu ul li:hover {
-	color: #162b73;
+.Header-ListTop li.icoTelefono {
+	background-image: url(../images/icoTelefonoTop.png);
+	padding-left: 28px;
 }
 
+.Header-ListTop li.IcoEmail {
+	background-image: url(../images/icoEmailTop.png);
+	padding-left: 30px;
+}
 
+.Header-Siguenos a {
+	margin-left: 8px;
+}
+
+.MainMenu {
+	padding-top: 40px;
+	padding-left: 175px;
+}
 
 .MainMenu-IcoMenu
 {
@@ -298,21 +320,38 @@ textarea::-moz-input-placeholder
 
 .MainMenu-List {
 	display: inline-block;
-	padding-top: 13px;
 	vertical-align: top;
 }
 
 .MainMenu-Item {
-	color: #005383;
-	font: 16px 'Raleway-Medium';
-	border-bottom: 3px solid #ffffff;
+	color: #30343f;
+	font: 12px 'montserratbold';
+	line-height: 12px;
 	margin-right: 40px;
-	padding-bottom: 4px;
 }
 
+.MainMenu-Submenu .MainMenu-Item {
+	background: url(../images/icoSubmenu.png) right center no-repeat;
+	padding-right: 17px;
+}
+
+
 .MainMenu-Item:hover, .MainMenu-Item.activo {
-	text-shadow: 1px 0px 0px #005383;
+	text-shadow: 1px 0px 0px #00ed7f;
 	border-color: #9aca3a;
+}
+
+/************************************************************************************/
+
+.Slider {
+	height: 698px;
+	background:  url(../images/fondos/bgSlider.jpg) center no-repeat;
+}
+
+.Slider-Center {
+	width: 1255px;
+	padding-top: 50px;
+	padding-left: 10px;
 }
 
 /************************************************************************************/
