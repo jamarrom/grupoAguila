@@ -599,11 +599,11 @@ fadeIn
 	-moz-animation-name: fadeIn;
 	-ms-animation-name: fadeIn;
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
-	-o-animation-duration: 1s;
-	-moz-animation-duration: 1s;
-	-ms-animation-duration: 1s;
+	animation-duration: 200ms;
+	-webkit-animation-duration: 200ms;
+	-o-animation-duration: 200ms;
+	-moz-animation-duration: 200ms;
+	-ms-animation-duration: 200ms;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;

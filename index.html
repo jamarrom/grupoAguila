@@ -15,6 +15,50 @@
         <link rel="stylesheet" type="text/css" href="css/animations.css">
         <style type="text/css">
         </style>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+        <script type="text/javascript">
+            //  $( window ).on( "load", function() {
+            //     $('video').trigger('play');
+            // });
+
+            // $(document).ready(function()
+            // {
+            //     $('video').trigger('play');
+
+            //     setTimeout(function(){
+            //         $('video').get(0).play();
+            //     },5000)
+            // });
+
+            $(document).ready(function() 
+            {
+                let posImg = 2;
+               
+                setInterval(()=> {
+                    if(posImg===4)
+                        posImg=1;
+
+                    $(".Slider").animate({'opacity':'0'}, 200);
+
+                    setTimeout(()=>{
+
+                        $(".Slider-Item").animate({'opacity':'0'}, 200);
+                        $(".Slider-Item").css({display:'none'});
+
+                        $(".Slider-Item").eq(posImg-1).css({display:'block'});
+                        $(".Slider-Item").eq(posImg-1).animate({'opacity':'1'}, 400);
+
+                        var imagen = document.getElementById("Slider");
+                        imagen.style.backgroundImage = "url('images/fondos/bgSlider"+posImg+".jpg')";
+                        $(".Slider").animate({'opacity':'1'}, 500);
+                        posImg++;
+                    },300)
+                },4500);
+            });
+        </script>
     </head>
     <body class="u-textCenter">
         <header class="Header">
@@ -54,9 +98,50 @@
             </div>
         </header>
 
-        <section class="Slider u-imagenFondoCover">
+        <section id="Slider" class="Slider u-imagenFondoCover">
             <article class="Slider-Center u-inline-block u-textLeft">
-                <figure class="slideRight"><img src="images/escudo.png" alt="Escudo aguila"></figure>
+                <div class="Slider-Item">
+                    <figure class="slideRight"><img src="images/escudo.png" alt="Escudo aguila"></figure>
+                    <div class="Slider-Circulo u-positionAbsolute u-redondeadoTotal u-box-sizing fadeIn">
+                        <h2 class="Slider-Title">
+                            La seguridad
+                            <span class="u-block">no tiene precio</span>
+                        </h2>
+
+                        <div class="u-textCenter">
+                            <p class="u-textCenter u-inline-block">Brindamos servicios de seguridad personalizada para garantizar tu protección </p>
+
+                            <a href="" class="Slider-Btn u-inline-block u-redondeado u-textCenter">CONTÁCTANOS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Slider-Item u-imagenFondoCover" style="display: none;">
+                    <div class="Slider-Circulo Slider2 u-positionAbsolute u-redondeadoTotal u-box-sizing fadeIn">
+                        <h2 class="Slider-Title">
+                            Tu seguridad <br />es nuestra prioridad
+                        </h2>
+
+                        <div class="u-textCenter">
+                            <p class="u-textCenter u-inline-block">INTRAMUROS | EXTRAMUROS | GPS | CÁMARAS DE VIGILANCIA</p>
+
+                            <a href="" class="Slider-Btn u-inline-block u-redondeado u-textCenter">SABER MÁS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Slider-Item u-imagenFondoCover"  style="display: none;">
+                    <div class="Slider-Circulo Slider3 u-positionAbsolute u-redondeadoTotal u-box-sizing u-textCenter  fadeIn">
+                        <h2 class="Slider-Title">
+                            Preservamos la integridad de de tu familia y hogar 
+                        </h2>
+
+                        <div class="u-textCenter">
+                            <p class="u-textCenter u-inline-block">Las 24 horas del día los 7 días de la semana.</p>
+
+                            <a href="" class="Slider-Btn u-inline-block u-redondeado u-textCenter">CONTÁCTANOS</a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
 
