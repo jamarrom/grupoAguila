@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- title -->
+        <title>Nosotros-Grupo Aguila</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <link rel="shortcut icon" href="favicon.png">
+        <!-- style sheets -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="css/utilidades.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $(".NuestrosServiciosInt-Col1 ul li").each(function(j){
+                    $(this).click(function(){
+                        $(".NuestrosServiciosInt-Col1 ul li").removeClass("activo");
+                        $(this).addClass("activo");
+
+                        $(".NuestrosServiciosInt-Item").animate({'opacity':'0'}, 200);
+                        $(".NuestrosServiciosInt-Item").css({display:'none'});
+
+                        $(".NuestrosServiciosInt-Item").eq(j).css({display:'block'});
+                        $(".NuestrosServiciosInt-Item").eq(j).animate({'opacity':'1'}, 400);
+                    })
+                });
+            });
+        </script>
+    </head>
+    <body class="u-textCenter">
+        <header class="Header">
+            <div class="Header-Top">
+                <div class="Header-CenterTop u-inline-block u-textLeft">
+                    <ul class="Header-ListTop u-inline-block slideDown">
+                        <li class="u-inline-block">Calimaya N° 83, Col. Cumbria, Cuautitlán Izcalli C.P. 54740,</li>
+                        <li class="icoTelefono u-inline-block">56  3085 2124  | 55 7159 6799</li>
+                        <li class="IcoEmail u-inline-block"><a href="mailto:contacto@grupoaguila.mx">contacto@grupoaguila.mx</a></li>
+                    </ul>
+
+                    <div class="Header-Siguenos u-floatRight slideDown">Síguenos: <figure class="u-inline-block"><a class="u-inline-block" href=""><img src="images/icoInstagram.png" alt=""></figure></a></div>
+                </div>
+            </div>
+            <div class="Header-Center u-textLeft u-inline-block">
+                <h1 class="Logo u-inline-block slideRight"><span class="u-ocultar">Grupo aguila</span></h1>
+
+                <nav class="MainMenu u-inline-block">
+                    <ul class="MainMenu-List u-mayuscula slideLeft">
+                        <li class="u-inline-block">
+                            <a href="" class="MainMenu-Item u-inline-block">NOSOTROS</a>
+                        </li>
+                        <li class="MainMenu-Submenu u-inline-block">
+                            <a href="" class="MainMenu-Item u-inline-block">SERVICIOS</a>
+                        </li>
+                        <li class="MainMenu-Submenu u-inline-block">
+                            <a href="" class="MainMenu-Item u-inline-block">bOLSA DE TRABAJO</a>
+                        </li>
+                        <li class="MainMenu-Submenu u-inline-block">
+                            <a href="" class="MainMenu-Item u-inline-block">clientes</a>
+                        </li>
+                        <li class="u-inline-block">
+                            <a href="" class="MainMenu-Item u-inline-block">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="NuestrosInt u-imagenFondoCover">
+            <article class="NuestrosInt-Center u-inline-block u-textLeft">
+                <h2 class="NuestrosInt-Title u-inline-block">Nosotros</h2>
+                <figure class="u-inline-block"><img src="images/logoNosotrosInt.png" alt="logo"></figure>
+            </article>
+        </section> 
+
+        <section class="Somos">
+            <article class="Somos-Center u-inline-block u-textLeft">
+                <div class="Somos-TextHeader">
+                    <p>G.C.S.P. Águila SA de CV dando servicio a nuestros clientes desde 1999</p>
+                    <p>Buscando siempre satisfacer las necesidades de seguridad <br />de nuestros clientes con calidad y lealtad</p>
+                </div>
+            </article>
+        </section>
+
+        <Footer class="Footer">
+            <div class="Footer-Center Interior u-inline-block u-textLeft">
+                <div class="Footer-Col1 u-inline-block">
+                    <figure class="Footer-Logo"></figure>
+                    <p>Buscando siempre satisfacer las necesidades de seguridad de nuestros clientes con calidad y lealtad.</p>
+                    <p>Nuestros servicios de seguridad se adaptan y contribuyen con sus estándares de calidad.</p>
+                </div>
+
+                <div class="Footer-Col2 u-inline-block">
+                    <h6 class="Footer-Title">Contacto</h6>
+                    <ul class="Footer-Menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li><a href="">Bolsa de trabajo</a></li>
+                        <li><a href="">Nuestros clientes</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="Footer-Col3 u-inline-block">
+                    <h6 class="Footer-Title">Contacto</h6>
+                    <ul class="Footer-ListContacto">
+                        <li class="Footer-ItemDireccion">
+                            Calimaya N° 83, Col. Cumbria, Cuautitlán Izcalli, Estado de México, C.P. 54740
+                        </li>
+                        <li class="Footer-ItemTelefono">&nbsp;</li>
+                        <li class="Footer-ItemEmail">
+                            Correo electrónico
+                            <a href="mailto:contacto@grupoaguila.mx">contacto@grupoaguila.mx</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </Footer>
+        <!-- <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script> -->
+    </body>
+</html>

@@ -876,8 +876,62 @@ textarea::-moz-input-placeholder
 
 .NuestrosServiciosInt-Col2 {
 	width: 898px;
+	color: #6e6e6e;
+	font-size: 14px;
+	line-height: 17px;
 }
 
 .NuestrosServiciosInt-Item figure{
 	margin-bottom: 60px;
+}
+
+.NuestrosServiciosInt-Col2 p {
+	margin-bottom: 34px;
+}
+
+.NuestrosServiciosInt-TitleCol2 {
+	font: 24px 'montserratsemibold';
+	line-height: 24px;
+}
+
+/************************************************************************************/
+
+.NuestrosInt {
+	height: 482px;
+	background: url(../images/fondos/bgNosotrosint.jpg) center no-repeat;
+}
+
+.NuestrosInt-Center {
+	width: 1263px;
+	padding-top: 77px;
+}
+
+.NuestrosInt-Title {
+	color: #fff;
+	font: 80px 'montserratmedium_italic';
+	line-height: 80px;
+	margin-top: 96px;
+	margin-right: 202px;
+}
+
+/************************************************************************************/
+
+.Somos {
+	background: #090f17;
+	padding-top: 110px;
+	padding-bottom: 190px;
+}
+
+.Somos-Center {
+	width: 1275px;
+}
+
+.Somos-TextHeader {
+	color: #00ed7f;
+	font: 20px 'montserratmedium_italic';
+	line-height: 20px;
+}
+
+.Somos-TextHeader p {
+	margin-bottom: 46px;
 }

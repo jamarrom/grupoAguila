@@ -13,8 +13,25 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/animations.css">
-        <style type="text/css">
-        </style>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $(".NuestrosServiciosInt-Col1 ul li").each(function(j){
+                    $(this).click(function(){
+                        $(".NuestrosServiciosInt-Col1 ul li").removeClass("activo");
+                        $(this).addClass("activo");
+
+                        $(".NuestrosServiciosInt-Item").animate({'opacity':'0'}, 200);
+                        $(".NuestrosServiciosInt-Item").css({display:'none'});
+
+                        $(".NuestrosServiciosInt-Item").eq(j).css({display:'block'});
+                        $(".NuestrosServiciosInt-Item").eq(j).animate({'opacity':'1'}, 400);
+                    })
+                });
+            });
+        </script>
     </head>
     <body class="u-textCenter">
         <header class="Header">
@@ -83,9 +100,35 @@
             <div class="NuestrosServiciosInt-Col2 u-inline-block u-textLeft">
                 <div class="NuestrosServiciosInt-Item">
                     <figure><img src="images/servicios/servicio1.jpg" alt="Servicio 1"></figure>
-
-                    
-                    
+                    <p class="NuestrosServiciosInt-TitleCol2">Servicio de Seguridad Intramuros:</p>
+                    <p>En Grupo Águila, entendemos la importancia de mantener su espacio seguro desde adentro. Nuestro servicio de seguridad intramuros se especializa en proteger sus instalaciones y activos dentro de sus propias fronteras. Nuestros experimentados agentes de seguridad garantizan un entorno seguro, implementando medidas de prevención y respuesta eficaces para mantener a raya cualquier amenaza interna.</p>
+                    <p class="NuestrosServiciosInt-TitleCol2">Servicio de Seguridad Extramuros:</p>
+                    <p>La seguridad no se limita a las paredes de su empresa. Con el servicio de seguridad extramuros de Grupo Águila, extendemos nuestra protección más allá de su ubicación física. Nuestros equipos altamente capacitados y equipados aseguran que sus empleados, activos y datos estén protegidos donde quiera que se encuentren, ya sea en tránsito o en otras ubicaciones.</p>
+                </div>
+                <div class="NuestrosServiciosInt-Item" style="display: none;">
+                    <figure><img src="images/servicios/servicio2.jpg" alt="Servicio 2"></figure>
+                    <p class="NuestrosServiciosInt-TitleCol2">Custodias:</p>
+                    <p>Confíe en nosotros para proteger y transportar sus activos valiosos. Nuestro servicio de custodias se especializa en el traslado seguro de objetos de alto valor, documentos confidenciales y otros activos críticos. </p>
+                    <p>Nuestros expertos en seguridad se encargan de cada detalle, garantizando la seguridad en todo momento.</p>
+                </div> 
+                <div class="NuestrosServiciosInt-Item" style="display: none;">
+                    <figure><img src="images/servicios/servicio3.jpg" alt="Servicio 3"></figure>
+                    <p class="NuestrosServiciosInt-TitleCol2">Escoltas:</p>
+                    <p>La seguridad personal y ejecutiva es una prioridad. Grupo Águila ofrece servicios de escoltas altamente profesionales para garantizar la seguridad de individuos de alto perfil, ejecutivos y VIPs. </p>
+                    <p>Nuestros escoltas altamente capacitados proporcionan una capa adicional de protección mientras usted se desplaza, garantizando su seguridad en todo momento.</p>
+                </div> 
+                <div class="NuestrosServiciosInt-Item" style="display: none;">
+                    <figure><img src="images/servicios/servicio4.jpg" alt="Servicio 4"></figure>
+                    <p class="NuestrosServiciosInt-TitleCol2">Monitoreo y Videovigilancia:</p>
+                    <p>Nuestro centro de monitoreo de vanguardia opera las 24 horas del día, los 7 días de la semana, para brindarle tranquilidad constante. Utilizamos tecnología de última generación para vigilar su propiedad en tiempo real. Cualquier actividad sospechosa se identifica y se informa de inmediato, lo que permite una respuesta rápida y efectiva a cualquier amenaza.</p>
+                    <p>En Grupo Águila, nos enorgullece ofrecer una gama completa de servicios de seguridad privada diseñados para satisfacer sus necesidades específicas. Nuestra misión es proteger lo que más le importa, brindando paz mental y seguridad en todo momento. Contáctenos hoy para discutir cómo podemos personalizar nuestros servicios para adaptarnos a sus necesidades de seguridad únicas.</p>
+                </div> 
+                <div class="NuestrosServiciosInt-Item" style="display: none;">
+                    <figure><img src="images/servicios/servicio5.jpg" alt="Servicio 5"></figure>
+                    <p class="NuestrosServiciosInt-TitleCol2">GPS:</p>
+                    <p>Su mercancía es uno de los valores más importantes de su empresa, la logística, el riesgo más alto y creciente.<br/>
+                        Nuestro compromiso es ofrecerle la mejor solución en sistemas de seguridad carretera y en la ciudad, con la ayuda de seguridad física y electrónica capaces de minimizar las posibilidades de riesgo incluyendo Escoltas y la plataforma más moderna del mercado en Escoltas Virtuales.</p>
+                    <p>Contamos con personal capacitado en los protocolos de seguridad los cuales se adaptan a sus necesidades y operación.</p>
                 </div>
             </div>
         </section>
