@@ -35,7 +35,48 @@
 
             $(document).ready(function() 
             {
-                let posImg = 2;
+
+                let posImg = 1;
+                $(".Slider-Direccion.Izq").click(function(){
+                    posImg--;
+
+                    if(posImg===0)
+                        posImg=3;
+
+                    setTimeout(()=>{
+                        $(".Slider-Item").animate({'opacity':'0'}, 200);
+                        $(".Slider-Item").css({display:'none'});
+
+                        $(".Slider-Item").eq(posImg-1).css({display:'block'});
+                        $(".Slider-Item").eq(posImg-1).animate({'opacity':'1'}, 400);
+
+                        var imagen = document.getElementById("Slider");
+                        imagen.style.backgroundImage = "url('images/fondos/bgSlider"+posImg+".jpg')";
+                        $(".Slider").animate({'opacity':'1'}, 500);
+                    },300)
+                });
+
+                $(".Slider-Direccion.Der").click(function(){
+                    posImg++;
+                    if(posImg===4)
+                        posImg=1;
+
+                    setTimeout(()=>{
+                        $(".Slider-Item").animate({'opacity':'0'}, 200);
+                        $(".Slider-Item").css({display:'none'});
+
+                        $(".Slider-Item").eq(posImg-1).css({display:'block'});
+                        $(".Slider-Item").eq(posImg-1).animate({'opacity':'1'}, 400);
+
+                        var imagen = document.getElementById("Slider");
+                        imagen.style.backgroundImage = "url('images/fondos/bgSlider"+posImg+".jpg')";
+                        $(".Slider").animate({'opacity':'1'}, 500);
+                        posImg++;
+                    },300)
+                });
+
+
+                /*let posImg = 2;
                
                 setInterval(()=> {
                     if(posImg===4)
@@ -56,7 +97,7 @@
                         $(".Slider").animate({'opacity':'1'}, 500);
                         posImg++;
                     },300)
-                },4500);
+                },4500);*/
             });
         </script>
     </head>
@@ -79,15 +120,15 @@
                 <nav class="MainMenu u-inline-block">
                     <ul class="MainMenu-List u-mayuscula slideLeft">
                         <li class="u-inline-block">
-                            <a href="" class="MainMenu-Item u-inline-block">NOSOTROS</a>
+                            <a href="nosotros.html" class="MainMenu-Item u-inline-block">NOSOTROS</a>
                         </li>
                         <li class="MainMenu-Submenu u-inline-block">
-                            <a href="" class="MainMenu-Item u-inline-block">SERVICIOS</a>
+                            <a href="servicios.html" class="MainMenu-Item u-inline-block">SERVICIOS</a>
                         </li>
-                        <li class="MainMenu-Submenu u-inline-block">
+                        <li class="u-inline-block">
                             <a href="" class="MainMenu-Item u-inline-block">bOLSA DE TRABAJO</a>
                         </li>
-                        <li class="MainMenu-Submenu u-inline-block">
+                        <li class="u-inline-block">
                             <a href="" class="MainMenu-Item u-inline-block">clientes</a>
                         </li>
                         <li class="u-inline-block">
@@ -99,6 +140,8 @@
         </header>
 
         <section id="Slider" class="Slider u-imagenFondoCover">
+            <a class="Slider-Direccion Izq u-positionAbsolute"></a>
+            <a class="Slider-Direccion Der u-positionAbsolute"></a>
             <article class="Slider-Center u-inline-block u-textLeft">
                 <div class="Slider-Item">
                     <figure class="slideRight"><img src="images/escudo.png" alt="Escudo aguila"></figure>
